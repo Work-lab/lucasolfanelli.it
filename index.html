@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="container m3 p3">
+    <div class="container m3 p3 border-bottom border-info">
        
         <div class="row my-3">
             <div class="col-md-4 col-sm-12">
@@ -70,8 +70,14 @@
                 </p>
             </div>
             <div class="col-md-8 col-sm-12">
-                <h4 class="h5 border-bottom border-info pb-3 w-50">Sono un consulente ICT che lavora per<br>- rendersi
-                    inutile,<br>- renderti autonomo<br>- e darti ROI</h4>
+                <h4 class="h5 border-bottom border-info pb-3 w-50">
+                    Sono un consulente ICT che lavora per
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Rendersi Inutile</li>
+                        <li class="list-group-item">Renderti Autonomo</li>
+                        <li class="list-group-item">Fornirti delle ROI</li>
+                    </ul>
+                    </h4>
 
                 
 
@@ -79,32 +85,32 @@
                     Dal 2005 come Worklab partecipo ed organizzo:<br>
                     <b>Progetti, Corsi, Workshop, Coaching e Mentoring in ambito ICT.</b>
                     <br><br>
-                    Corsi attivi
-                    - <a href="https://bit.ly/corso-sito" target="_blank">Corso di comunicazione e trattativa</a>.
-                    <br><br>
+                    <p class="alert alert-info w-50">
+                    Corsi attivi : <a class="btn btn-outline-info text-dark" href="https://bit.ly/corso-sito" target="_blank">Corso di comunicazione e trattativa</a>.
+                    </p>
 
                     Dal 2005 offro ai miei clienti supporto e consulenze in ambito di :
-                <ul class="text-start">
+                <ul class="list-group list-group-flush">
 
-                    <li>
+                    <li class="list-group-item">
                         Selezione personale
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         Trattativa
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         Project Managerment
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         Team Management
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         Interfaccia con Clienti e Fornitori
                     </li>
-                    <li>
+                    <li class="list-group-item">
                         Creazione nuovi prodotti e servizi: dall'idea al post vendita.
                     </li>
-                    <li>E tanto altro ancora.</li>
+                    <li class="list-group-item">E tanto altro ancora.</li>
                 </ul>
                 <br>
                
@@ -115,8 +121,9 @@
         </div>
 
     </div>
-    <div class="container">
-        <div class="row">
+    <div class="container border-bottom border-info pb-5">
+     
+        <div class="row mt-5">
             <div class="col-12">
                 <h4>Ho anche scritto un manule</h4>
             </div>
@@ -147,7 +154,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <h5 class="m-3">Alcune apparizioni in video.</h5>
@@ -223,11 +230,15 @@
             </div>
         </div>
         <div class="row m-5 p-3">
-            <div class="col-12">
+            <div class="col-4">
                 <h5 class="m-3">altri video, sempre ospiti di Fabio Biondi</h5>
-                <ul>
-                    <li>Hack The Dev Cove #000 - Durata 4h circa</li>
-                    <li>Hack The Dev Cove #001 - Durata 4h circa</li>
+                <ul class="list-group">
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#htdc000">
+                        Hack The Dev Cove #000 
+                      </button> - Durata 4h circa</li>
+                    <li class="list-group-item"><button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#htdc001">
+                        Hack The Dev Cove #001 
+                      </button> - Durata 4h circa</li>
                 </ul>
             </div>
     </div>
@@ -245,7 +256,25 @@
 
 
     </div>
-
+<!-- Modal -->
+<div class="modal fade" id="htdc000" tabindex="-1" role="dialog" aria-labelledby="htdc000Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="htdc000Label">Hack The Dev Cove #000</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ugl4tsmIuCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+<!-- End Modal-->
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
