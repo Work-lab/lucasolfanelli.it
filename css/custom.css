@@ -77,3 +77,16 @@ article a, a {
   border-color:#43b2b9;
   color:#0f0f0f;
 }
+
+@media screen and (min-width: 100px) and (max-width: 1024px) {
+  html, body, :root {
+    font-size: 30px !important;
+    --bs-body-font-size: 30px !important;
+  
+  }
+  article p {
+    font-size: 1.5rem !important;
+  }
+  h3 {font-size: calc(1.3rem + .6vw)}
+  h2.h3 {font-size: calc(1.3rem + .8vw)}
+}

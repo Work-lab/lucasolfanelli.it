@@ -48,6 +48,7 @@
       grid-auto-flow: column;
       grid-gap: 1rem;
     }
+    
   }
   @media screen and (min-width: 1025px) {
     .grid-wrapper {
@@ -57,7 +58,8 @@
   @media screen and (min-width: 600px) and (max-width: 1024px) {
     .grid-wrapper {
       grid-template-columns: 1fr 2fr;
-    }
+      
+    }:root {font-size:30px;}
   }
   
   article {
